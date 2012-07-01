@@ -1,17 +1,58 @@
 {
-  "name": "crafity.jstest",
-  "description": "Crafity JavaScript Testing Framework",
-  "version": "0.0.1",
-  "homepage": "http://crafity.com/projects/crafity.jstest",
-  "repository": {
-    "url": ""
-  },
-  "author": "Bart Riemens <briemens@crafity.com> (http://bartriemens.crafity.com)",
-  "main": "./lib/crafity.jstest.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "engines": {
-    "node": "*"
-  }
+	"name": "crafity-jstest",
+	"description": "Crafity Test Framework",
+	"version": "0.0.1",
+	"author": "Bart Riemens <briemens@crafity.com>",
+	"homepage": "https://github.com/Crafity/crafity-jstest/wiki",
+	"keywords": [
+		"Testing", "TDD", "JavaScript", "Node", "Async"
+	],
+	"maintainers": [
+		{
+			"name": "Bart Riemens",
+			"email": "briemens@crafity.com",
+			"web": "http://crafity.com/about/bart"
+		},
+		{
+			"name": "Galina Slavova",
+			"email": "galina@crafity.com",
+			"web": "http://crafity.com/about/galina"
+		}
+	],
+	"contributors": [
+		{
+			"name": "Bart Riemens",
+			"email": "briemens@crafity.com",
+			"web": "http://crafity.com/about/bart"
+		},
+		{
+			"name": "Galina Slavova",
+			"email": "galina@crafity.com",
+			"web": "http://crafity.com/about/galina"
+		}
+	],
+	"main": "./lib/crafity.jstest.js",
+	"directories": {
+		"lib": "lib",
+		"tests": "tests"
+	},
+	"licenses": [
+		{
+			"type": "The MIT License",
+			"url": "https://github.com/Crafity/crafity-core/blob/master/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/Crafity/crafity-jstest/issues",
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/Crafity/crafity-jstest.git"
+		}
+	],
+	"dependencies": {
+		"crafity-core": "*"
+	},
+	"engines": {
+		"node": "*"
+	}
 }
