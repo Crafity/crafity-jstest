@@ -1,0 +1,17 @@
+{
+  "name": "crafity.jstest",
+  "description": "Crafity JavaScript Testing Framework",
+  "version": "0.0.1",
+  "homepage": "http://crafity.com/projects/crafity.jstest",
+  "repository": {
+    "url": ""
+  },
+  "author": "Bart Riemens <briemens@crafity.com> (http://bartriemens.crafity.com)",
+  "main": "./lib/crafity.jstest.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
