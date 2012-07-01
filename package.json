@@ -1,7 +1,7 @@
 {
 	"name": "crafity-jstest",
 	"description": "Crafity Test Framework",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Bart Riemens <briemens@crafity.com>",
 	"homepage": "https://github.com/Crafity/crafity-jstest/wiki",
 	"keywords": [
@@ -34,7 +34,7 @@
 	"main": "./lib/crafity.jstest.js",
 	"directories": {
 		"lib": "lib",
-		"tests": "tests"
+		"tests": "test"
 	},
 	"licenses": [
 		{
@@ -42,13 +42,13 @@
 			"url": "https://github.com/Crafity/crafity-core/blob/master/LICENSE"
 		}
 	],
-	"bugs": "https://github.com/Crafity/crafity-jstest/issues",
-	"repositories": [
-		{
-			"type": "git",
-			"url": "https://github.com/Crafity/crafity-jstest.git"
-		}
-	],
+	"bugs": {
+		"url": "https://github.com/Crafity/crafity-jstest/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Crafity/crafity-jstest.git"
+	},
 	"dependencies": {
 		"crafity-core": "*"
 	},
