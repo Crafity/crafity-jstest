@@ -1,9 +1,22 @@
-var jstest = require('../lib/crafity.jstest');
-var mainContext = jstest.createContext();
-var assert = jstest.assert;
+/*jslint node: true, bitwise: true, unparam: true, maxerr: 50, white: true */
+"use strict";
 
-// Print out the name of the test module
-console.log("Testing 'crafity.jstest.js'... ");
+/*!
+ * crafity-jstest - Test Framework for JavaScript
+ * Copyright(c) 2013 Crafity
+ * Copyright(c) 2013 Bart Riemens
+ * Copyright(c) 2013 Galina Slavova
+ * MIT Licensed
+ */
+
+/**
+ * Test dependencies.
+ */
+
+var jstest = require('../lib/crafity.jstest')
+  , mainContext = jstest.createContext("JSTest")
+  , assert = jstest.assert
+  ;
 
 mainContext.run({
 	"Run test with no arguments must return a result": function () {
