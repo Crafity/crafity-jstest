@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export filename=`basename $1`
-if [[ $filename == ~* ]]; then
+if [[ $filename == ~* || $filename != *js ]]; then
 	exit 0;
 fi
 
