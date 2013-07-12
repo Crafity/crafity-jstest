@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export filename=`basename $1`
-if [[ $filename == "~"* ]]; then
+if [[ $filename == ~* ]]; then
 	exit 0;
 fi
 
