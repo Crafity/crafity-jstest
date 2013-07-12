@@ -1,7 +1,10 @@
 #!/bin/sh
 
 export filename=`basename $1`
-if [[ "$filename" == ~* ]]; then
+
+echo === $filename === $1 ====
+
+if [[ "${filename}" == ~* ]]; then
 	exit 0;
 fi
 
