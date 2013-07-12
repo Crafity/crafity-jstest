@@ -9,7 +9,10 @@
     "TDD",
     "JavaScript",
     "Node",
-    "Async"
+    "Async",
+    "JSLint",
+    "http",
+    "assert"
   ],
   "maintainers": [
     {
