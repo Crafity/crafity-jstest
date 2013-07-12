@@ -1,9 +1,14 @@
 #!/bin/bash
+
+## Run JSLint and all the Unit Tests
+
 export CurrentDir=`pwd`
 export ScriptDir="`pwd`/`dirname $0`"
 export RootDir="$ScriptDir/.."
 export TestDir="$RootDir/test"
 export ErrorCode=0
+
+# First run JSLint and quit if there is an error
 
 $ScriptDir/npm-jslint.sh
 export ErrorCode=$?

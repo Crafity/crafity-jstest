@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Run JSLint against a single file
+
 export filename=`basename $1`
 
 if [[ "${filename}" == ~* ]]; then

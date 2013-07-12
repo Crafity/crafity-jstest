@@ -1,4 +1,7 @@
 #!/bin/bash
+
+## Download the latest version of JSLint and make it a commonJS module
+
 export ScriptsDir="`dirname $0`"
 export CurrentDir=`pwd`
 export JSLintDir="$ScriptsDir/../lib/jslint"
