@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 node ./test/package.test.js
 export ErrorCode=$?
 if [ "0" != "$ErrorCode" ]; then
