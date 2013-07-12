@@ -61,6 +61,8 @@
   },
   "scripts": {
     "prepublish": "npm prune",
-    "test": "./runtests.sh"
+    "install": "scripts/npm-install.sh",
+    "update": "scripts/npm-update.sh",
+    "test": "scripts/npm-test.sh"
   }
 }
