@@ -7,11 +7,11 @@ export CurrentDir=`pwd`
 
 # First update JSLint by downloading it directly from the github directory
 
-$ScriptsDir/npm-update-jslint.sh
-export ErrorCode=$?
-if [ "0" != "$ErrorCode" ]; then
-	exit $ErrorCode
-fi
+#$ScriptsDir/npm-update-jslint.sh
+#export ErrorCode=$?
+#if [ "0" != "$ErrorCode" ]; then
+#	exit $ErrorCode
+#fi
 
 # Find all the JS files and call the jslint script to check them
 
