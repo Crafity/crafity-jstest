@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export filename=`basename $1`
-if [[ $filename == ~* || $filename != *js ]]; then
+if [[ $filename == ~* ]]; then
 	exit 0;
 fi
 
@@ -76,6 +76,10 @@ else
         TODISPLAY=$LINTEE
     fi
 
+    if [ "${LINTEE_TYPE}" != "js" ]; then
+			exit 0;
+		fi
+		
     #
     # We've got all the information we need: Now we need to decide
     # which engine we use.  If `node` exists, use it.  It's amazingly
