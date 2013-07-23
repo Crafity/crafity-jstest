@@ -1,8 +1,8 @@
 {
   "name": "crafity-jstest",
   "description": "Crafity Test Framework",
-  "version": "0.1.2",
-  "author": "Bart Riemens <briemens@crafity.com>",
+  "version": "0.1.3",
+  "author": "Galina Slavova <galina@crafity.com> and Bart Riemens <briemens@crafity.com>",
   "homepage": "https://github.com/Crafity/crafity-jstest/wiki",
   "keywords": [
     "Testing",
