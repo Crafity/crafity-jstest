@@ -57,7 +57,8 @@
     "url": "https://github.com/Crafity/crafity-jstest.git"
   },
   "dependencies": {
-    "crafity-core": "~0.1.0"
+    "crafity-core": "~0.1.0",
+    "ansi": "~0.2.0"
   },
   "engines": {
     "node": "*"
