@@ -19,8 +19,7 @@ var jstest = require('../lib/crafity.jstest')
   ;
 
 testContext.run({
-  "Intantiate the JSLint wrapper": function () {
-    
+  "Instantiate the JSLint wrapper": function () {
     var jslint = require('../lib/crafity.jstest.jslint');
     assert.isFunction(jslint.JSLinter, "Expected a JSLinter constructor");
   }
