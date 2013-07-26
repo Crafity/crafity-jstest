@@ -27,25 +27,25 @@ var jstest = require('../lib/crafity.jstest')
 	 */
 	var tests = {
 
-		'package---> The module must have main file': function () {
+		'The module must have main file': function () {
 			
 			main = require('../lib/crafity.jstest');
 			assert.isDefined(main, "Expected main to be defined");
 		},
 
-		'package---> The module must have a fullname': function () {
+		'The module must have a fullname': function () {
 			assert.isDefined(main.fullname, "Expected fullname to be defined");
 		},
 
-		'package---> The module must have a version number': function () {
+		'The module must have a version number': function () {
 			assert.isDefined(main.version, "Expected version number to be defined");
 		},
 
-		'package---> The module must have package.json file': function (context) {
+		'The module must have package.json file': function (context) {
 			fs.readFileSync("./package.json");
 		},
 
-		'package---> The module must have the same name as quoted in package.json': function () {
+		'The module must have the same name as quoted in package.json': function () {
 
 			var data = fs.readFileSync("./package.json")
 				, json = JSON.parse(data.toString());
@@ -54,7 +54,7 @@ var jstest = require('../lib/crafity.jstest')
 
 		},
 
-		'package---> The module must have the same version as quoted in package.json': function () {
+		'The module must have the same version as quoted in package.json': function () {
 
 			var data = fs.readFileSync("./package.json")
 				, json = JSON.parse(data.toString());
