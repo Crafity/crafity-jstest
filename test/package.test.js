@@ -15,7 +15,7 @@
 
 var jstest = require('../lib/crafity.jstest')
 	, assert = jstest.assert
-	, context = jstest.createContext()
+	, context = jstest.createContext("Module Package Tests")
 	, fs = require('fs')
 	, main
 	;

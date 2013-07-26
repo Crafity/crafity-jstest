@@ -14,7 +14,7 @@
  */
 
 var jstest = require('../lib/crafity.jstest')
-  , mainContext = jstest.createContext("JSTest")
+  , mainContext = jstest.createContext("Module JSTest Tests")
   , assert = jstest.assert
   ;
 

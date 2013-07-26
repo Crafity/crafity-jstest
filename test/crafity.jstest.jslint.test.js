@@ -14,7 +14,7 @@
  */
 
 var jstest = require('../lib/crafity.jstest')
-  , testContext = jstest.createContext("JSLint tests")
+  , testContext = jstest.createContext("Module JSLint Tests")
   , assert = jstest.assert
   ;
 
