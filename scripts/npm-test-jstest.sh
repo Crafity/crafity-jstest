@@ -15,10 +15,9 @@ fi
 export runcommand='node'
 
 #
-# 
+# Check if code coverage needs and can be run
 #
-
-export ISTANBUL_LOCATION=`which istanbul1`
+export ISTANBUL_LOCATION=`which istanbul`
 if [[ "$COVER" != "" && "$ISTANBUL_LOCATION" == "" ]]; then
 	echo "============================================"
 	echo " PLEASE INSTALL ISTANBUL FOR CODE COVERAGE"
@@ -26,7 +25,6 @@ if [[ "$COVER" != "" && "$ISTANBUL_LOCATION" == "" ]]; then
 	echo "    $ npm install -g istanbul"
 	echo "============================================"
 fi
-
 if [[ "$COVER" != "" && "$ISTANBUL_LOCATION" != "" ]]; then
 	# Run the tests with Istanbul instead of NodeJS
 	export runcommand='istanbul cover';
