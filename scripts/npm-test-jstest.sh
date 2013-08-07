@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # Execute JSLint and exit if failed
@@ -18,7 +18,7 @@ export runcommand='node'
 # 
 #
 
-export ISTANBUL_LOCATION=`which istanbul`
+export ISTANBUL_LOCATION=`which istanbul1`
 if [[ "$COVER" != "" && "$ISTANBUL_LOCATION" == "" ]]; then
 	echo "============================================"
 	echo " PLEASE INSTALL ISTANBUL FOR CODE COVERAGE"
