@@ -13,12 +13,11 @@
  * Test dependencies.
  */
 
-var jstest = require('../lib/crafity.jstest')
-  , mainContext = jstest.createContext("Module JSTest Tests")
+var jstest = require('../lib/crafity.jstest').createContext("Module JSTest Tests")
   , assert = jstest.assert
   ;
 
-mainContext.run({
+jstest.run({
   "Run test with no arguments must return a result": function () {
     var test_jstest = jstest.createContext();
     var result = test_jstest.run;
@@ -35,3 +34,5 @@ mainContext.run({
     });
   }
 });
+
+module.exports = jstest;
