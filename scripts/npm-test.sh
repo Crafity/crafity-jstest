@@ -8,17 +8,14 @@ export RootDir="$ScriptDir/.."
 export TestDir="$RootDir/test"
 export ErrorCode=0
 
-# First run JSLint and quit if there is an error
-
-$ScriptDir/npm-jslint.sh
-export ErrorCode=$?
-if [ "0" != "$ErrorCode" ]; then
-	exit $ErrorCode
-fi
+cd $RootDir
+export RootDir="`pwd`"
+export projectName="`basename $RootDir`"
+cd $CurrentDir
 
 if [ "$WATCH" != "" ]; then
 	touch .nodemonignore
-	nodemon -q -x "$ScriptDir/npm-test-jstest.sh" -w "$RootDir"
+	nodemon -x "$ScriptDir/npm-test-jstest.sh" -w "$RootDir"
 else
 	$ScriptDir/npm-test-jstest.sh
 	export ErrorCode=$?

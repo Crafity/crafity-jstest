@@ -13,14 +13,15 @@
  * Test dependencies.
  */
 
-var jstest = require('../lib/crafity.jstest')
-  , testContext = jstest.createContext("Module JSLint Tests")
+var jstest = require('../lib/crafity.jstest').createContext("Module JSLint Tests")
   , assert = jstest.assert
   ;
 
-testContext.run({
+jstest.run({
   "Instantiate the JSLint wrapper": function () {
     var jslint = require('../lib/crafity.jstest.jslint');
     assert.isFunction(jslint.JSLinter, "Expected a JSLinter constructor");
   }
 });
+
+module.exports = jstest;
