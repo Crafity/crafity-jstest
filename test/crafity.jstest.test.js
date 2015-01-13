@@ -14,25 +14,25 @@
  */
 
 var jstest = require('../lib/crafity.jstest').createContext("Module JSTest Tests")
-  , assert = jstest.assert
-  ;
+	, assert = jstest.assert
+	;
 
 jstest.run({
-  "Run test with no arguments must return a result": function () {
-    var test_jstest = jstest.createContext();
-    var result = test_jstest.run;
-    assert.isDefined(result, 'Expected a result');
-  },
-  "Run test a simple async test": function (context) {
-    context.async(3000);
+	"Run test with no arguments must return a result": function () {
+		var test_jstest = jstest.createContext();
+		var result = test_jstest.run;
+		assert.isDefined(result, 'Expected a result');
+	},
+	"Run test a simple async test": function (context) {
+		context.async(3000);
 
-    setTimeout(context.complete, 100);
+		setTimeout(context.complete, 100);
 
-    context.on("complete", function (err, result) {
-      assert.hasNoValue(err, "Didn't expect an error");
-      assert.areEqual([], result, "Expected another result");
-    });
-  }
+		context.on("complete", function (err, result) {
+			assert.hasNoValue(err, "Didn't expect an error");
+			assert.areEqual([], result, "Expected another result");
+		});
+	}
 });
 
 module.exports = jstest;
